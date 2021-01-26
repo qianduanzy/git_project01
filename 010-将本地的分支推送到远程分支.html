@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <pre>
+    一、远程分支
+      我们使用 `git checkout -b [分支名]` 是在本地仓库创建了分支，并没有关联到远程分支，即没有 push 代码
+
+    二、本地分支提交到远程分支
+      `git push -u origin 本地分支名:远程分支名`
+
+    注意：
+      1. 当本地分支名和远程分支名一致的时候，只写一个就可以了
+      2. 只有第一次远程还没有这个分支的时候，我们才需要使用 -u origin 分支名，之后每次操作都是直接 git push 
+  </pre>
+</body>
+</html>

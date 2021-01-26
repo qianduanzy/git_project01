@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <pre>
+    1. 执行下列命令生成 SSH 密钥
+      `ssh-keygen -t rsa -b 4096 -C 注册github时的邮箱`
+
+    2. 在 ~/.ssh 文件夹中复制 id_rsa.pub 文件的内容
+      `code ~/.ssh`
+
+    3. 依次在 github => Setting => SSH => And New SSH 中粘贴刚才复制的文本内容
+    
+    4. 检查 ssh 是否配置成功， 执行下列命令
+      `ssh -T git@github.com`
+  </pre>
+</body>
+</html>
